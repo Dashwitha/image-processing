@@ -91,3 +91,23 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/72288132/104899644-1f9e3200-59a1-11eb-93e3-46674a50bea8.png)
 ![image](https://user-images.githubusercontent.com/72288132/104899659-23ca4f80-59a1-11eb-806f-04385f863b3f.png)
 
+## 5. convert a color image to different color space
+Color spaces are different types of color modes, used in image processing and signals and system for various purposes. Some of the common color spaces are:
+
+RGB CMY’K Y’UV YIQ Y’CbCr HSV Color space conversion is the translation of the representation of a color from one basis to another. This typically occurs in the context of converting an image that is represented in one color space to another color space, the goal being to make the translated image look as similar as possible to the original.
+### code
+import cv2 
+image=cv2.imread("nature.jpg")
+cv2.imshow("Original Image",image)
+cv2.waitKey(0)
+gray=cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+cv2.imshow('gray images',gray)  
+cv2.waitKey(0) 
+YCrCb=cv2.cvtColor(image, cv2.COLOR_BGR2YCrCb) 
+cv2.imshow('YCrCb image',YCrCb)
+cv2.waitKey(0)
+HSV=cv2.cvtColor(image, cv2.COLOR_BGR2HSV) 
+cv2.imshow('HSV image',HSV)
+cv2.waitKey(0)          
+cv2.destroyAllWindows()
+#### output:
