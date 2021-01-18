@@ -22,7 +22,7 @@ cv2.waitKey()
 Piece-wise Linear Transformation is type of gray level transformation that is used for image enhancement. It is a spatial domain method. It is used for manipulation of an image so that the result is more suitable than the original for a specific application.
 #### a)Scaling
 In computer graphics and digital imaging, image scaling refers to the resizing of a digital image. ... When scaling a raster graphics image, a new image with a higher or lower number of pixels must be generated. In the case of decreasing the pixel number (scaling down) this usually results in a visible quality loss.
-###code
+### code
 import cv2 
 imgclr=cv2.imread("imgred.jpg") 
 res = cv2.resize(imgclr,(300,300),interpolation=cv2.INTER_CUBIC) 
@@ -36,7 +36,7 @@ cv2.waitKey()
  
  ## b)Rotation
  Image rotation is a common image processing routine with applications in matching, alignment, and other image-based algorithms. ... An image rotated by 45°. The output is the same size as the input, and the out of edge values are dropped.
- ###code
+ ### code
  import cv2 
 imgclr=cv2.imread("colorimg.jpg") 
 (row, col) = imgclr.shape[:2] 
@@ -50,7 +50,7 @@ cv2.waitKey()
 ![image](https://user-images.githubusercontent.com/72288132/104898026-1f9d3280-599f-11eb-99c5-de20435777f7.png)     ![image](https://user-images.githubusercontent.com/72288132/104898088-2f1c7b80-599f-11eb-9648-6348bd752e86.png)
  ## 3.Develop a program to find the sum and mean of a set of images
  In digital image processing, the sum of absolute differences (SAD) is a measure of the similarity between image blocks. It is calculated by taking the absolute difference between each pixel in the original block and the corresponding pixel in the block being used for comparison. These differences are summed to create a simple metric of block similarity, the L1 norm of the difference image or Manhattan distance between two image blocks.
- ####code
+ #### code
 sum and mean
 import cv2
 import glob 
