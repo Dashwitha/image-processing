@@ -30,9 +30,6 @@ cv2.imshow('imagecolor',imgclr)
 cv2.imshow('imagecolor1',res)
 cv2.waitKey()
 
-## output:
-![image](https://user-images.githubusercontent.com/72288132/104898835-1e203a00-59a0-11eb-8489-0401223cdde9.png)
-![image](https://user-images.githubusercontent.com/72288132/104898884-2d06ec80-59a0-11eb-8e09-632f25110a1c.png)
 
 ## output:
 ![image](https://user-images.githubusercontent.com/72288132/104897222-21b2c180-599e-11eb-91dd-7416e97d4451.png)   ![image](https://user-images.githubusercontent.com/72288132/104897435-5fafe580-599e-11eb-9c96-b4bd35858b3c.png)  
@@ -70,3 +67,7 @@ cv2.waitKey(0)
 cv2.imshow("Mean",mean)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+## output:
+![image](https://user-images.githubusercontent.com/72288132/104898835-1e203a00-59a0-11eb-8489-0401223cdde9.png)
+![image](https://user-images.githubusercontent.com/72288132/104898884-2d06ec80-59a0-11eb-8e09-632f25110a1c.png)
