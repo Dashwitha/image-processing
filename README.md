@@ -130,5 +130,5 @@ img = Image.fromarray(data, 'RGB')
 img.save('my.png')
 img.show()
 #### output:
-
+![image](https://user-images.githubusercontent.com/72288132/104900394-09dd3c80-59a2-11eb-9b52-aff01f407fdf.png)
 
