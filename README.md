@@ -71,3 +71,20 @@ cv2.destroyAllWindows()
 ## output:
 ![image](https://user-images.githubusercontent.com/72288132/104898835-1e203a00-59a0-11eb-8489-0401223cdde9.png)
 ![image](https://user-images.githubusercontent.com/72288132/104898884-2d06ec80-59a0-11eb-8e09-632f25110a1c.png)
+
+## 4. Convert color image gray scale to binary image
+Thresholding is the simplest method of image segmentation and the most common way to convert a grayscale image to a binary image. ... Here g(x, y) represents threshold image pixel at (x, y) and f(x, y) represents greyscale image pixel at (x, y).
+
+### code
+import cv2 
+img=cv2.imread("nature.jpg")
+cv2.imshow("Original Image",img)
+gray=cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.imshow('gray images',gray)  
+cv2.waitKey(0) 
+ret,bw_img= cv2.threshold(img, 127, 255, cv2.THRESH_BINARY) 
+cv2.imshow("Binary",bw_img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+#### output:
+
