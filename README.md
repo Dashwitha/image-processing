@@ -9,5 +9,7 @@ cv2.imshow('imagecolor',imgclr)
 cv2.imshow('imagecolor1',imggry)
 cv2.imwrite('grayimg.jpg',imggry)
 cv2.waitKey()
-output:
+
+## output:
+
 ![image](https://user-images.githubusercontent.com/72288132/104895462-ec0cd900-599b-11eb-9983-924a2f7de331.png)
