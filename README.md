@@ -13,3 +13,5 @@ cv2.waitKey()
 ## output:
 
 ![image](https://user-images.githubusercontent.com/72288132/104895462-ec0cd900-599b-11eb-9983-924a2f7de331.png)
+
+![image](https://user-images.githubusercontent.com/72288132/104895790-4e65d980-599c-11eb-9a9c-80888a32341c.png)
