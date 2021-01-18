@@ -37,3 +37,5 @@ cv2.imshow('imagecolor',imgclr)
 cv2.imshow('imagecolor1',res)
 cv2.waitKey()
 ## output:
+
+![image](https://user-images.githubusercontent.com/72288132/104898026-1f9d3280-599f-11eb-99c5-de20435777f7.png)     ![image](https://user-images.githubusercontent.com/72288132/104898088-2f1c7b80-599f-11eb-9648-6348bd752e86.png)
