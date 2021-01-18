@@ -111,3 +111,9 @@ cv2.imshow('HSV image',HSV)
 cv2.waitKey(0)          
 cv2.destroyAllWindows()
 #### output:
+
+
+![image](https://user-images.githubusercontent.com/72288132/104899990-86235000-59a1-11eb-91a1-595c2695178e.png)
+![image](https://user-images.githubusercontent.com/72288132/104899997-89b6d700-59a1-11eb-8d5c-d34f069b0769.png)
+![image](https://user-images.githubusercontent.com/72288132/104900017-8e7b8b00-59a1-11eb-8042-f435f70129c7.png)
+![image](https://user-images.githubusercontent.com/72288132/104900030-94716c00-59a1-11eb-9399-3aae4e68b2a0.png)
