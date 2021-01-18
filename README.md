@@ -24,4 +24,3 @@ In computer graphics and digital imaging, image scaling refers to the resizing o
 
 
 ## output:
-
