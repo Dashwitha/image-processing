@@ -158,6 +158,7 @@ print ("Original matrix:\n", M)
 print ("Summed neighbors matrix:\n", N)
 
 ### output:
+
 Original matrix:
  [[1 2 3]
  
@@ -166,6 +167,7 @@ Original matrix:
  [7 8 9]]
  
 Summed neighbors matrix:
+
  [[11. 19. 13.]
  
  [23. 40. 27.]
@@ -291,11 +293,13 @@ return 0;
 ### Output:
 
 Enter the row and column size for the  matrix
+
 2
 
 2
 
 Enter the elements of the matrix
+
 9
 
 8
@@ -305,11 +309,13 @@ Enter the elements of the matrix
 6
 
 Enter the row and column size for the  matrix
+
 2
 
 2
 
 Enter the elements of the matrix
+
 5
 
 4
@@ -319,16 +325,19 @@ Enter the elements of the matrix
 2
 
 addition is
+
  14      12
  
  10      8
  
 subtraction is
+
  4      4
  
  4      4
  
 multiplication is
+
  69     52
  
  53     40
