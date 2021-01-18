@@ -162,6 +162,7 @@ Original matrix:
  [[1 2 3]
  [4 5 6]
  [7 8 9]]
+ 
 Summed neighbors matrix:
  [[11. 19. 13.]
  [23. 40. 27.]
@@ -284,28 +285,35 @@ return 0;
 }
 
 ### Output:
+
 Enter the row and column size for the  matrix
 2
 2
+
 Enter the elements of the matrix
 9
 8
 7
 6
+
 Enter the row and column size for the  matrix
 2
 2
+
 Enter the elements of the matrix
 5
 4
 3
 2
+
 addition is
  14      12
  10      8
+ 
 subtraction is
  4      4
  4      4
+ 
 multiplication is
  69     52
  53     40
