@@ -24,4 +24,16 @@ In computer graphics and digital imaging, image scaling refers to the resizing o
 
 
 ## output:
-![image](https://user-images.githubusercontent.com/72288132/104897222-21b2c180-599e-11eb-91dd-7416e97d4451.png) ![image](https://user-images.githubusercontent.com/72288132/104897435-5fafe580-599e-11eb-9c96-b4bd35858b3c.png)  
+![image](https://user-images.githubusercontent.com/72288132/104897222-21b2c180-599e-11eb-91dd-7416e97d4451.png)   ![image](https://user-images.githubusercontent.com/72288132/104897435-5fafe580-599e-11eb-9c96-b4bd35858b3c.png)  
+ 
+ ## b)Rotation
+ Image rotation is a common image processing routine with applications in matching, alignment, and other image-based algorithms. ... An image rotated by 45°. The output is the same size as the input, and the out of edge values are dropped.
+ import cv2 
+imgclr=cv2.imread("colorimg.jpg") 
+(row, col) = imgclr.shape[:2] 
+M = cv2.getRotationMatrix2D((col / 2, row/ 2), 45, 1)
+res = cv2.warpAffine(imgclr, M, (col,row)) 
+cv2.imshow('imagecolor',imgclr)
+cv2.imshow('imagecolor1',res)
+cv2.waitKey()
+## output:
