@@ -117,3 +117,18 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/72288132/104899997-89b6d700-59a1-11eb-8d5c-d34f069b0769.png)
 ![image](https://user-images.githubusercontent.com/72288132/104900017-8e7b8b00-59a1-11eb-8042-f435f70129c7.png)
 ![image](https://user-images.githubusercontent.com/72288132/104900030-94716c00-59a1-11eb-9399-3aae4e68b2a0.png)
+
+## 6. Develop a program to create an image from 2D array generate an array of random size.
+A digital image is nothing more than data—numbers indicating variations of red, green, and blue at a particular location on a grid of pixels. Most of the time, we view these pixels as miniature rectangles sandwiched together on a computer screen. With a little creative thinking and some lower level manipulation of pixels with code, however, we can display that information in a myriad of ways. This tutorial is dedicated to breaking out of simple shape drawing in Processing and using images (and their pixels) as the building blocks of Processing graphics.
+### code
+from PIL import Image
+import numpy as np
+w, h = 512, 512
+data = np.zeros((h, w, 3), dtype=np.uint8)
+data[0:256, 0:256] = [255, 80, 20] # red patch in upper left
+img = Image.fromarray(data, 'RGB')
+img.save('my.png')
+img.show()
+#### output:
+
+
