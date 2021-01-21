@@ -199,7 +199,7 @@ public:int get()
    }
   }
  
- 
+
  };
  void operator+(matrix a1)
  {
