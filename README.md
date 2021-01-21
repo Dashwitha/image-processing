@@ -32,6 +32,7 @@ cv2.waitKey()
 
 ## output:
  
+![image](https://user-images.githubusercontent.com/72288132/105336600-4e2d3000-5b8e-11eb-81bb-e35f73ff35c0.png)  ![image](https://user-images.githubusercontent.com/72288132/105336622-538a7a80-5b8e-11eb-9e31-e56358685ebd.png)
  
  ## b)Rotation
  Image rotation is a common image processing routine with applications in matching, alignment, and other image-based algorithms. ... An image rotated by 45°. The output is the same size as the input, and the out of edge values are dropped.
