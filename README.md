@@ -375,3 +375,5 @@ img=ImageEnhance.Color(img)
 img.enhance(2.0).show()
 ### output
 
+![image](https://user-images.githubusercontent.com/72288132/105328229-aeb76f80-5b84-11eb-8d89-e8a6f6dcb46b.png)
+![image](https://user-images.githubusercontent.com/72288132/105328289-bd9e2200-5b84-11eb-99c0-417fd3816784.png)
