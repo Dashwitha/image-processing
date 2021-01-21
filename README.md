@@ -345,6 +345,7 @@ multiplication is
 
 
 ## Develop a program to implement negative transformation of an image
+
 The output of image inversion is a negative of a digital image.
 In a digital image the intensity levels vary from 0 to L-1. The negative transformation is given by s=L-1-r.
 When an image is inverted, each of its pixel value ‘r’ is subtracted from the maximum pixel value L-1 and the original pixel is replaced with the result ‘s’.
@@ -360,3 +361,17 @@ cv2.waitKey(0);
 cv2.destroyAllWindows()
 #### output
 ![image](https://user-images.githubusercontent.com/72288132/105325627-ad387800-5b81-11eb-96d2-9f4d772273d9.png)    ![image](https://user-images.githubusercontent.com/72288132/105325686-b9bcd080-5b81-11eb-8af3-748579a88c8c.png)
+
+
+## Develop a program to implement contrast of an image 
+
+Contrast is created by the difference in luminance reflected from two adjacent surfaces. In other words, contrast is the difference in visual properties that makes an object distinguishable from other objects and the background. Contrast is an important factor in any subjective evaluation of image quality.
+
+### code 
+from PIL import Image, ImageEnhance
+img = Image.open("flower.jpg")
+img.show()
+img=ImageEnhance.Color(img)
+img.enhance(2.0).show()
+### output
+
