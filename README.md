@@ -448,6 +448,19 @@ cv2.destroyAllWindows()
 
 ## 14)Histogram of an image
 (a)Through your code
+(b)Through the built in function 
+(c)To varify (a)(b) are one and same
+
+### code
+
+import matplotlib.image as mpimg
+import matplotlib.pyplot as plt
+import numpy as np
+image = cv2.imread('flower.jpg')
+x=image[:,:,0]
+plt.hist(x)
+### output
+![image](https://user-images.githubusercontent.com/72288132/105340896-5176ea80-5b93-11eb-9616-1a1813524893.png)
 
 
 ### code
