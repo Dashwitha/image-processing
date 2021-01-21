@@ -475,5 +475,4 @@ plt.ylabel('number of pixels')
 plt.title('Histogram of the original image') 
 
 #### output
-
-
+![image](https://user-images.githubusercontent.com/72288132/105340564-e9280900-5b92-11eb-9e4d-c54fda9c7b8f.png)
