@@ -344,7 +344,7 @@ multiplication is
 
 
 
-## Develop a program to implement negative transformation of an image
+## 9)Develop a program to implement negative transformation of an image
 
 The output of image inversion is a negative of a digital image.
 In a digital image the intensity levels vary from 0 to L-1. The negative transformation is given by s=L-1-r.
@@ -363,7 +363,7 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/72288132/105325627-ad387800-5b81-11eb-96d2-9f4d772273d9.png)    ![image](https://user-images.githubusercontent.com/72288132/105325686-b9bcd080-5b81-11eb-8af3-748579a88c8c.png)
 
 
-## Develop a program to implement contrast of an image 
+## 10)Develop a program to implement contrast of an image 
 
 Contrast is created by the difference in luminance reflected from two adjacent surfaces. In other words, contrast is the difference in visual properties that makes an object distinguishable from other objects and the background. Contrast is an important factor in any subjective evaluation of image quality.
 
@@ -376,4 +376,26 @@ img.enhance(2.0).show()
 ### output
 ![image](https://user-images.githubusercontent.com/72288132/105328855-57fe6580-5b85-11eb-9e9e-5d2be06bd699.png)
 ![image](https://user-images.githubusercontent.com/72288132/105329103-a27fe200-5b85-11eb-9cf2-be83c210f488.png)
+
+## 10)Thresholding transformation
+Thresholding is a type of image segmentation, where we change the pixels of an image to make the image easier to analyze. In thresholding, we convert an image from color or grayscale into a binary image, i.e., one that is simply black and white.we convert an image from color or grayscale into a binary image, i.e one that is simply black and white.
+### code
+import cv2  
+import numpy as np
+image = cv2.imread('flower.jpg')
+img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+ret, thresh1 = cv2.threshold(img, 120, 255, cv2.THRESH_BINARY)
+ret, thresh2 = cv2.threshold(img, 120, 255, cv2.THRESH_BINARY_INV)
+ret, thresh3 = cv2.threshold(img, 120, 255, cv2.THRESH_TRUNC)
+ret, thresh4 = cv2.threshold(img, 120, 255, cv2.THRESH_TOZERO)
+ret, thresh5 = cv2.threshold(img, 120, 255, cv2.THRESH_TOZERO_INV)
+cv2.imshow('Binary Threshold', thresh1)
+cv2.imshow('Binary Threshold Inverted', thresh2)
+cv2.imshow('Truncated Threshold', thresh3)
+cv2.imshow('Set to 0', thresh4)
+cv2.imshow('Set to 0 Inverted', thresh5)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#### output
 
