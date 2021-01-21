@@ -132,7 +132,7 @@ img.show()
 #### output:
 ![image](https://user-images.githubusercontent.com/72288132/104900394-09dd3c80-59a2-11eb-9b52-aff01f407fdf.png)
 
-## 7. Find the neighbors matrix.
+## 7. Develop a program to Find the sum of the each elements neighbors matrix.
 ### The numpy.zeros() function returns a new array of given shape and type, with zeros.append () Syntax: list_name.append (‘value’) It takes only one argument. This function appends the incoming element to the end of the list as a single new element.
 ### code
 import numpy as np
@@ -174,8 +174,26 @@ Summed neighbors matrix:
  
  [17. 31. 19.]]
 
+## 8) Develop a program to find the neighbors of elements in the  matrix.
+ The neighbor matrix includes the degree sequence as its first column and the sequence of all other distances in the graph up to the graph's diameter, enumerating the number of neighbors each vertex has at every distance present in the graph. 
+ ### code
+ import numpy as np
+ini_array = np.array([[1, 2,5, 3], [4,5, 4, 7], [9, 6, 1,0]])
+print("initial_array : ", str(ini_array));
+def neighbors(radius, rowNumber, columnNumber):
+    return[[ini_array[i][j]if i >= 0 and i < len(ini_array) and j >= 0 and j < len(ini_array[0]) else 0
+            for j in range(columnNumber-1-radius, columnNumber+radius)]
+           for i in range(rowNumber-1-radius, rowNumber+radius)]
+neighbors(1, 3, 3)
 
-## 8)Write a c++ program to perform operator overloading
+#### output
+initial_array :  [[1 2 5 3]
+ [4 5 4 7]
+ [9 6 1 0]]
+
+[[5, 4, 7], [6, 1, 0], [0, 0, 0]]
+
+## 9)Write a c++ program to perform operator overloading
 ### code
  #include <iostream>
 using namespace std;
@@ -344,7 +362,7 @@ multiplication is
 
 
 
-## 9)Develop a program to implement negative transformation of an image
+## 10)Develop a program to implement negative transformation of an image
 
 The output of image inversion is a negative of a digital image.
 In a digital image the intensity levels vary from 0 to L-1. The negative transformation is given by s=L-1-r.
@@ -363,7 +381,7 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/72288132/105325627-ad387800-5b81-11eb-96d2-9f4d772273d9.png)    ![image](https://user-images.githubusercontent.com/72288132/105325686-b9bcd080-5b81-11eb-8af3-748579a88c8c.png)
 
 
-## 10)Develop a program to implement contrast of an image 
+## 11)evelop a program to implement contrast of an image 
 
 Contrast is created by the difference in luminance reflected from two adjacent surfaces. In other words, contrast is the difference in visual properties that makes an object distinguishable from other objects and the background. Contrast is an important factor in any subjective evaluation of image quality.
 
@@ -377,7 +395,7 @@ img.enhance(2.0).show()
 ![image](https://user-images.githubusercontent.com/72288132/105328855-57fe6580-5b85-11eb-9e9e-5d2be06bd699.png)
 ![image](https://user-images.githubusercontent.com/72288132/105329103-a27fe200-5b85-11eb-9cf2-be83c210f488.png)
 
-## 10)Thresholding transformation
+## 12)Thresholding transformation
 Thresholding is a type of image segmentation, where we change the pixels of an image to make the image easier to analyze. In thresholding, we convert an image from color or grayscale into a binary image, i.e., one that is simply black and white.we convert an image from color or grayscale into a binary image, i.e one that is simply black and white.
 ### code
 import cv2  
@@ -406,7 +424,7 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/72288132/105330904-aad91c80-5b87-11eb-9035-8445f4e9fba9.png)
 ![image](https://user-images.githubusercontent.com/72288132/105331126-f390d580-5b87-11eb-94bf-cd6056f462b1.png)
 
-## 11)Develop a program to implement power-low(Gamma)transformation 
+## 13)Develop a program to implement power-low(Gamma)transformation 
 Power-law (gamma) transformations can be mathematically expressed as s = cr^{\gamma}. Gamma correction is important for displaying images on a screen correctly, to prevent bleaching or darkening of images when viewed from different types of monitors with different display settings.
 ### code
 import cv2
