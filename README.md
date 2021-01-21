@@ -446,4 +446,34 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/72288132/105334864-35237f80-5b8c-11eb-89ba-8dcc320333d1.png)
 ![image](https://user-images.githubusercontent.com/72288132/105334884-3c4a8d80-5b8c-11eb-9481-3c2fe9bf8e6a.png)
 
+## 14)Histogram of an image
+(a)Through your code
+
+
+### code
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt        
+def hist_plot(img):
+    count =[]  
+    r = []
+    for k in range(0, 256):
+        r.append(k)
+        count1 = 0  
+        for i in range(m):
+            for j in range(n):
+                if img[i, j]== k:
+                    count1+= 1
+        count.append(count1)      
+    return (r, count)  
+img = cv2.imread('flower.jpg', 0)
+m, n = img.shape
+r1, count1 = hist_plot(img)
+plt.stem(r1, count1)
+plt.xlabel('intensity value')
+plt.ylabel('number of pixels')
+plt.title('Histogram of the original image') 
+
+#### output
+
 
