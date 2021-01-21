@@ -13,9 +13,8 @@ cv2.waitKey()
 
 ## output:
 
-![image](https://user-images.githubusercontent.com/72288132/104895462-ec0cd900-599b-11eb-9983-924a2f7de331.png)
-
-![image](https://user-images.githubusercontent.com/72288132/104895790-4e65d980-599c-11eb-9a9c-80888a32341c.png)
+![image](https://user-images.githubusercontent.com/72288132/105336416-0f977580-5b8e-11eb-9cda-236463e8882f.png)
+![image](https://user-images.githubusercontent.com/72288132/105336439-158d5680-5b8e-11eb-9523-a3e79bf136c3.png)
 
 ## 2. Develop a program to perform linear transformation on an image.
 ### linear transformation
@@ -32,7 +31,7 @@ cv2.waitKey()
 
 
 ## output:
-![image](https://user-images.githubusercontent.com/72288132/104897222-21b2c180-599e-11eb-91dd-7416e97d4451.png)   ![image](https://user-images.githubusercontent.com/72288132/104897435-5fafe580-599e-11eb-9c96-b4bd35858b3c.png)  
+ 
  
  ## b)Rotation
  Image rotation is a common image processing routine with applications in matching, alignment, and other image-based algorithms. ... An image rotated by 45°. The output is the same size as the input, and the out of edge values are dropped.
