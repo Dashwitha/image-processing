@@ -406,3 +406,21 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/72288132/105330904-aad91c80-5b87-11eb-9035-8445f4e9fba9.png)
 ![image](https://user-images.githubusercontent.com/72288132/105331126-f390d580-5b87-11eb-94bf-cd6056f462b1.png)
 
+## 11)Develop a program to implement power-low(Gamma)transformation 
+Power-law (gamma) transformations can be mathematically expressed as s = cr^{\gamma}. Gamma correction is important for displaying images on a screen correctly, to prevent bleaching or darkening of images when viewed from different types of monitors with different display settings.
+### code
+import cv2
+import numpy as np
+img = cv2.imread('flower.jpg')
+cv2.imshow("Original",img)
+cv2.waitKey(0)
+for gamma in [0.1, 0.5, 1.2, 2.2]:  
+    gamma_corrected = np.array(255*(img / 255) ** gamma, dtype = 'uint8')  
+    cv2.imshow('gamma_transformed '+str(gamma)+'.jpg', gamma_corrected)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+### output
+
+
+
